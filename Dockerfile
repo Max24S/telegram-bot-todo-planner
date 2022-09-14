@@ -31,4 +31,6 @@ RUN mkdir -p /home/$user/.composer && \
 # Set working directory
 WORKDIR /var/www
 
+# create file for mysql volume
+RUN mkdir -p /var/www/mysql/data
 USER $user
